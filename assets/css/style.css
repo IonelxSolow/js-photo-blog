@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-image: url("../img/wall.png");
+    /* background-color: aqua; */
+    h1{
+        /* font-family: 'Courier New', Courier, monospace; */
+        font-size: 6.62rem;
+    }
+}
+
+main{
+    max-width: 80%;
+   margin: auto;
+}
+
+.bg_body_image{
+    background-image: url("../img/cork.png");
+    background-size: cover;
+}
+
+.bg_card_top_image{
+    
+    background-image: url("../img/05.jpg");
+    background-size: cover;
+    aspect-ratio: 1 / 1;
+}

@@ -30,3 +30,12 @@ main{
     background-size: cover;
     aspect-ratio: 1 / 1;
 }
+
+.font_family_date{
+    font-family: 'Sometype Mono', 'monospace';;
+}
+
+.font_family_title{
+font-family: 'Edu Tas Beginner', 'sans-serif';
+}
+

@@ -7,7 +7,6 @@
 
 header{
     background-image: url("../img/wall.png");
-    /* background-color: aqua; */
     h1{
         font-family: 'Edu Tas Beginner', 'sans-serif';
         font-size: 6.62rem;
@@ -25,26 +24,23 @@ main{
     background-size: cover;
 }
 
-.bg_card_top_image{
-    
+/* .bg_card_top_image{
     background-image: url("../img/05.jpg");
     background-size: cover;
     aspect-ratio: 1 / 1;
-}
+} */
 
 .font_family_date{
     font-family: 'Sometype Mono', 'monospace';;
 }
 
+.font_family_title{
+    font-family: 'Edu Tas Beginner', 'sans-serif';
+}
 
+/* sotto i 600 px riduco il font size del title */
 @media only screen and (max-width:600px) {
-    header{
-        background-image: url("../img/wall.png");
-        /* background-color: aqua; */
-        h1{
-            font-family: 'Edu Tas Beginner', 'sans-serif';
+    header h1{
             font-size: 4.62rem;
-            font-weight: 700;
-        }
     }
 }

@@ -19,7 +19,7 @@ fetch(postsUrlEndpoint)
             console.log(`Questo e l'url:${data.url}`)
             const markup = `
             <div class="col p-3">
-            <div class="p-3 bg-light position-relative shadow">
+            <div class="p-4 bg-light position-relative shadow">
             <div class="position-absolute top-0 start-50 translate-middle-x  z-1">
             <img src="./assets/img/pin.svg" alt="pin" style="height: 2.3rem; transform: translateY(-20%);"/>
           </div>

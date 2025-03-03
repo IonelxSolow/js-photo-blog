@@ -1,98 +1,82 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-header{
-    height: 150px;
-    background-image: url("../img/wall.png");
-    h1{
-        font-family: 'Edu Tas Beginner', 'sans-serif';
-        font-size: 6.62rem;
-        font-weight: 700;
-        padding: 0.75rem;
-    }
+header {
+  height: 150px;
+  background-image: url("../img/wall.png");
+  h1 {
+    font-family: "Edu Tas Beginner", "sans-serif";
+    font-size: 6.62rem;
+    font-weight: 700;
+    padding: 0.75rem;
+  }
 }
 
-main{
-    max-width: 80%;
-   margin: auto;
+main {
+  max-width: 80%;
+  margin: auto;
 }
 
-.bg_body_image{
-    background-image: url("../img/cork.png");
-    background-size: cover;
+.bg_body_image {
+  background-image: url("../img/cork.png");
+  background-size: cover;
 }
 
-/* .bg_card_top_image{
-    background-image: url("../img/05.jpg");
-    background-size: cover;
-    aspect-ratio: 1 / 1;
-} */
-
-.font_family_date{
-    font-family: 'Sometype Mono', 'monospace';;
+.font_family_date {
+  font-family: "Sometype Mono", "monospace";
 }
 
-.font_family_title{
-    font-family: 'Edu Tas Beginner', 'sans-serif';
+.font_family_title {
+  font-family: "Edu Tas Beginner", "sans-serif";
 }
 
-/* .immagine{
-    height: 200px;
-    width: 200px;
-} */
-
-.card_hover:hover{
-    z-index: 2;
-    transform: scale(1.1) rotate(10deg);
-    cursor: pointer;
+.card_hover:hover {
+  z-index: 2;
+  transform: scale(1.1) rotate(15deg);
+  cursor: pointer;
 }
-
 
 #overlay {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 3;
-  }
-  
-  .imgClass{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 40rem;
-    transform: translate(-50%,-50%);
-  }
-
-  #button{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 15%);
-  }
-  
-/* sotto i 650 px riduco il font size del title e la dimensione immagine overlay*/
-@media only screen and (max-width:650px) {
-    header h1{
-        padding: 0;
-        margin-top: 2rem;
-            font-size: 4.62rem;
-    }
-    #imageOverlay{
-        height: 28rem;
-    }
-    #button{
-        top:10%;
-    }
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
 }
 
+.imgClass {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 40rem;
+  transform: translate(-50%, -50%);
+}
 
+#button {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 15%);
+}
+
+@media only screen and (max-width: 650px) {
+  header h1 {
+    padding: 0;
+    margin-top: 2rem;
+    font-size: 4.62rem;
+  }
+  #imageOverlay {
+    height: 28rem;
+  }
+  #button {
+    top: 10%;
+  }
+}

@@ -1,7 +1,8 @@
 const cardEl = document.querySelector('.row');
 const postsUrlEndpoint = 'https://lanciweb.github.io/demo/api/pictures/';
 
-console.log(cardEl)
+
+console.log(`cardEl: ${cardEl}`)
 
 fetch(postsUrlEndpoint)
     .then(response => {
@@ -25,7 +26,7 @@ fetch(postsUrlEndpoint)
           </div>
           <div class="card border-0">
             <div class="bg_card_top_image">
-               <img src="${data.url}" class="card-img-top rounded-0" alt="..."> 
+               <img id="${data.id}" src="${data.url}" class="card-img-top rounded-0 cursor_img" alt="..." onclick="on('${data.url}')"> 
             </div>
             <div class="card-body bg-light p-0">
               <p class="card-text mb-0 mt-3 font_family_date text-body-tertiary">${data.date}</p>
@@ -37,15 +38,22 @@ fetch(postsUrlEndpoint)
             //inserire in pagine prima della fine del div .row
         cardEl.insertAdjacentHTML('beforeend', markup);
 
-        })
-
         
 
 
-
-
-
-
+        })
     })
 
      .catch(error => console.error('Error', error))
+
+
+
+     function on() {
+      document.getElementById("overlay").style.display = "block";
+    }
+    
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+    }
+
+    
